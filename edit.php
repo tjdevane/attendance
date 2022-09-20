@@ -12,7 +12,7 @@
 	else{
 		$id = $_GET['id'];
 		$attendee = $crud->getAttendeeDetails($id);	
-		
+
 	
 ?>
 
@@ -55,6 +55,7 @@
 	    <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.
 	    </div>
 	  	</div>
+		<a href="viewrecords.php" class="btn btn-default" name="submit">Back to List</a>
 		<button type="submit" class="btn btn-success" name="submit">Save Changes</button>
 	</form>
 <?php } ?>
