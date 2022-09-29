@@ -2,7 +2,7 @@
 /*
 * To connect to a database you can use APIs or PDOs
 */	
-	// 
+	// local database connection
 	$host = '127.0.0.1';
 	$db = 'attendance_db';
 	$user = 'root';
@@ -11,11 +11,11 @@
 
 
     // remote database connection
-	$host = 'remotemysql.com';
-	$db = 'KHI4MyizfN';
-	$user = 'KHI4MyizfN';
-	$pass = 'n9xhGrbywv';
-	$charset = 'utf8mb4';
+	// $host = 'remotemysql.com';
+	// $db = 'KHI4MyizfN';
+	// $user = 'KHI4MyizfN';
+	// $pass = 'n9xhGrbywv';
+	// $charset = 'utf8mb4';
 
 	// an engine for connecting to the database
 	// dsn: data source name
@@ -33,6 +33,12 @@
 	} 
 
 	require_once 'crud.php';
+	require_once 'user.php';
 	$crud = new crud($pdo);
+	$user = new user($pdo);
+
+	$user->insertUser("admin", "password");
+
+
 
 ?>
