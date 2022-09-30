@@ -52,8 +52,8 @@
 	  	<div class="form-group">
 	    	<label for="phone" class="form-label">Contact Number</label>
 	    	<input type="text" class="form-control" id="phone" name="phone">
-	    <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.
-	    </div>
+	    	<div id="phoneHelp" class="form-text">We'll never share your number with anyone else.
+	    	</div>
 	  	</div>
 		<button type="submit" class="btn btn-primary" name="submit">Submit</button>
 	</form>
